@@ -1,0 +1,29 @@
+﻿
+<!ELEMENT instagram(usuarios,posts,comentarios)>
+<!ELEMENT usuarios(usuario)>
+<!ELEMENT usuario(perfil)>
+<!ELEMENT perfil (foto+)>
+<!ELEMENT foto (#PCDATA)>
+<!ATTLIST foto nombre CDATA #REQUIRED>
+<!ATTLIST foto alias CDATA #REQUIRED>
+<!ATTLIST foto id ID #REQUIRED>
+<!ATTLIST foto contraseña CDATA #REQUIRED>
+<!ATTLIST foto email CDATA #REQUIRED>
+<!ATTLIST foto url_avatar CDATA #REQUIRED>
+<!ATTLIST foto fecha CDATA #REQUIRED>
+<!ELEMENT posts (publicacion+)>
+<!ELEMENT publicacion (#PCDATA)>
+<!ATTLIST publicacion idRef_foto #REQUIRED>
+<!ATTLIST publicacion descripcion CDATA #REQUIRED>
+<!ATTLIST publicacion idRef_comentarios #REQUIRED>
+<!ATTLIST publicacion num_likes CDATA #REQUIRED>
+<!ATTLIST publicacion fecha CDATA #REQUIRED>
+<!ELEMENT comentarios (comentario+)>
+<!ELEMENT comentario (#PCDATA)>
+<!ATTLIST comentario autor CDATA #REQUIRED>
+<!ATTLIST comentario id ID #REQUIRED>
+<!ATTLIST comentario idRef_usuario #REQUIRED>
+<!ATTLIST comentario fecha CDATA #REQUIRED>
+<!ATTLIST comentario idRef_foto #REQUIRED>
+ 
+ 

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<instagram>
+    <usuarios>
+      <usuario nombre="Celia",alias="Celiiamijes_12", id="u1", contraseña="12345", email="celialabailarina@gmail.com", url_avatar="fdfdfd" >
+        <perfil>
+          <foto id="f1", fecha="12/12/2020">foto</foto>
+          <foto id="f2", fecha="13/12/2020">foto</foto>
+          <foto id="f3", fecha="14/12/2020">foto</foto>
+        </perfil>
+      </usuario>
+      <usuario nombre="Alfonso", alias="alfonsokrbb", id="u2", contraseña="12345", email="alfonsitoermejon@gmail.com">
+        <perfil>
+          <foto id="f4", fecha="16/02/2020">foto</foto>
+          <foto id="f5", fecha="17/02/2020">foto</foto>
+          <foto id="f6", fecha="18/02/2020">foto</foto>
+        </perfil>
+      </usuario>
+    </usuarios>
+    <posts>
+      <publicacion idref_foto="f1", descripcion="fdfdfdf", idref_comentarios="c1", num_likes="186"></publicacion>
+      <publicacion idref_foto="f4", descripcion="fdfdfdf", idref_comentarios="c2",  num_likes="117"></publicacion>
+    </posts>
+    <comentarios>
+      <comentario idref_usuario="u2", fecha="12/12/2020", idref_foto="f1">wow que gran foto</comentario>
+      <comentario idref_foto="u1", fecha="16/02/2020", idref_foto="f4">Que bonito que eres miarma</comentario>
+    </comentarios>
+</instagram>
